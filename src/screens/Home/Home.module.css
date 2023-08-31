@@ -9,11 +9,12 @@
 .welcomeContainer {
   display: flex;
   align-items: center; /* Vertically center items */
+  justify-content: center;
 }
 
 .img {
-  width: 400px; /* Set the desired width */
-  height: 400px; /* Set the desired height */
+  width: 500px; /* Set the desired width */
+  height: 500px; /* Set the desired height */
   border-radius: 50%; /* Make the image circular */
   object-fit: cover; /* Maintain the image's aspect ratio */
 }
@@ -23,8 +24,7 @@
   text-align: left;
   font-weight: 300;
   font-size: 72px;
-  padding-left: 15%;
-  margin-right: 20%;
+  margin-right: 10%;
 }
 
 .postIntroContainer {

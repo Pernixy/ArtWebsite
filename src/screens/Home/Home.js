@@ -9,12 +9,12 @@ const Home = () => {
   return (
     <div className={styles.backgroundBody}>
       <Parallax pages={7}>
-        <ParallaxLayer offset={0.1}>
+        <ParallaxLayer offset={0.05}>
           <div>
             <NavBar />
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.75}>
+        <ParallaxLayer offset={0.3}>
           <div className={styles.welcomeContainer}>
             <h2 className={styles.welcome}>Hey! I'm Carlos.</h2>
             <img src={pfp} className={styles.img} />
