@@ -1,0 +1,17 @@
+.backgroundBody {
+  background-color: #0e0e1d;
+  flex: 1;
+  width: 100%;
+  height: 100vh;
+}
+
+.textStyle {
+  color: #8389a2;
+  text-align: center;
+}
+
+.p {
+  color: #8389a2;
+  text-align: center;
+  font-size: 24px;
+}
