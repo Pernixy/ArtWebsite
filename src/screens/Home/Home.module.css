@@ -1,5 +1,5 @@
 .backgroundBody {
-  background-color: #000000;
+  background: linear-gradient(#000000, #0e0e1d);
   display: flex;
   flex: 1;
   width: 100%;
@@ -8,8 +8,11 @@
 
 .welcomeContainer {
   display: flex;
-  align-items: center; /* Vertically center items */
-  justify-content: center;
+}
+
+.topParallaxTransition {
+  background: linear-gradient(#0e0e1d, #000000);
+  border-top: 0.5px solid silver;
 }
 
 .img {
@@ -24,11 +27,19 @@
   text-align: left;
   font-weight: 300;
   font-size: 72px;
-  margin-right: 10%;
+  padding-left: 10%;
+}
+
+.introTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 
 .postIntroContainer {
-  background: linear-gradient(#000000, #5858af);
+  background: linear-gradient(#000000, #0e0e1d);
   height: 100%;
 }
 
@@ -46,12 +57,11 @@
   padding-left: 10%;
   padding-top: 10%;
 }
-.wannaKnow {
+
+.pSmall {
   color: #8389a2;
   text-align: center;
-  font-size: 36px;
-  padding-top: 30%;
-  font-weight: bold;
+  font-size: 18px;
   padding-right: 10%;
   padding-left: 10%;
 }
