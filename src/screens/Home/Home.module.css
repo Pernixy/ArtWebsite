@@ -27,6 +27,11 @@
   margin-right: 20%;
 }
 
+.postIntroContainer {
+  background: linear-gradient(#000000, #5858af);
+  height: 100%;
+}
+
 .header {
   color: #8389a2;
   text-align: center;
@@ -39,6 +44,7 @@
   font-size: 24px;
   padding-right: 10%;
   padding-left: 10%;
+  padding-top: 10%;
 }
 .wannaKnow {
   color: #8389a2;
