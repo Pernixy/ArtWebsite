@@ -18,7 +18,7 @@
 .img {
   width: 500px; /* Set the desired width */
   height: 500px; /* Set the desired height */
-  border-radius: 50%; /* Make the image circular */
+  border-radius: 10%; /* Make the image circular */
   object-fit: cover; /* Maintain the image's aspect ratio */
 }
 
@@ -39,6 +39,8 @@
 }
 
 .postIntroContainer {
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(#000000, #0e0e1d);
   height: 100%;
 }

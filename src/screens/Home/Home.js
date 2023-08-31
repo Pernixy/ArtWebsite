@@ -4,6 +4,8 @@ import styles from "./Home.module.css";
 import NavBar from "../../components/NavBar";
 import starry from "../../images/earth.jpg";
 import pfp from "../../images/pfp.jpg";
+import reactLogo from "../../images/react.png";
+import InfoItem from "../../components/Home/InfoItem";
 
 const Home = () => {
   return (
@@ -32,7 +34,7 @@ const Home = () => {
         <ParallaxLayer
           offset={1.8}
           factor={1.2}
-          speed={0.5}
+          speed={1}
           style={{
             backgroundImage: `url(${starry})`,
             backgroundSize: "cover",
@@ -42,9 +44,10 @@ const Home = () => {
             <h2 className={styles.welcome}>Welcome to my site.</h2>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={2.4}>
+        <ParallaxLayer offset={2.4} speed={0.5}>
           <div className={styles.postIntroContainer}>
             <h1 className={styles.header}>My Technology Stack</h1>
+            <InfoItem imgUrl={reactLogo} />
           </div>
         </ParallaxLayer>
       </Parallax>
