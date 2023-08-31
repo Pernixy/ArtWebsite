@@ -1,0 +1,24 @@
+.NavBar {
+  display: flex;
+  justify-content: center;
+}
+
+.NavLink {
+  color: #8389a2;
+  text-decoration: none;
+  transition: color 0.3s;
+  padding-top: 30px;
+  font-size: 36px;
+  border-radius: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  box-sizing: border-box; /* Include border in element size */
+}
+
+/* Define the hover style for the NavLink */
+.NavLink:hover {
+  color: #ffffff;
+}
+.active {
+  border-bottom: 2px solid yellow;
+}

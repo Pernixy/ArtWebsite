@@ -1,20 +1,39 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import React from "react";
 import styles from "./Home.module.css";
-import NavBar from "../../components/Home/NavBar";
+import NavBar from "../../components/NavBar";
+import starry from "../../images/earth.jpg";
+import pfp from "../../images/pfp.jpg";
 
 const Home = () => {
   return (
     <div className={styles.backgroundBody}>
-      <Parallax pages={2}>
+      <Parallax pages={7}>
         <ParallaxLayer>
           <NavBar />
         </ParallaxLayer>
         <ParallaxLayer offset={0.2}>
-          <h2 className={styles.textStyle}>Hello</h2>
+          <div className={styles.welcomeContainer}>
+            <h2 className={styles.welcome}>Hey! I'm Carlos.</h2>
+            <img src={pfp} className={styles.img} />
+          </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1}>
-          <h2 className={styles.textStyle}>Welcome to the site</h2>
+        <ParallaxLayer
+          offset={1.2}
+          factor={1.2}
+          style={{
+            backgroundImage: `url(${starry})`,
+            backgroundSize: "cover",
+          }}
+        >
+          <div className={styles.welcomeContainer}>
+            <h2 className={styles.welcome}>Welcome to my site.</h2>
+          </div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={2} speed={1}>
+          <h1 className={styles.header}>Where I run things</h1>
+        </ParallaxLayer>
+        <ParallaxLayer offset={3}>
           <p className={styles.p}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id
             aliquam purus, eget dignissim lacus. Mauris mollis pellentesque
@@ -59,6 +78,7 @@ const Home = () => {
             Maecenas gravida libero tellus. Fusce ac lorem felis. Quisque a
             pretium urna.
           </p>
+          <p className={styles.wannaKnow}>Wanna know what all that means?</p>
         </ParallaxLayer>
       </Parallax>
     </div>
