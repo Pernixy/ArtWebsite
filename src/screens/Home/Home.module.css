@@ -1,5 +1,5 @@
 .backgroundBody {
-  background: linear-gradient(#000000, #0e0e1d);
+  background: #0e0e1d;
   display: flex;
   flex: 1;
   width: 100%;
@@ -8,11 +8,18 @@
 
 .welcomeContainer {
   display: flex;
+  justify-content: space-between;
+  border: 1px solid #8389a2;
+  margin-inline: 10%;
+  padding: 5em;
 }
 
 .topParallaxTransition {
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(#0e0e1d, #000000);
-  border-top: 0.5px solid silver;
+  min-height: 20%;
+  padding-left: 10%;
 }
 
 .img {
@@ -22,18 +29,42 @@
   object-fit: cover; /* Maintain the image's aspect ratio */
 }
 
+.socialimg {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-inline: 20px;
+}
+
+.socialsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  border-bottom: 0.5px solid #8389a2;
+  padding-bottom: 10%;
+}
+
 .welcome {
   color: #8389a2;
-  text-align: left;
+  text-align: center;
   font-weight: 300;
   font-size: 72px;
+  padding-right: 10%;
   padding-left: 10%;
+}
+
+.welcome2 {
+  color: #8389a2;
+  border-bottom: 0.5px solid #8389a2;
+  text-align: center;
+  font-weight: 300;
+  font-size: 72px;
+  padding-bottom: 20px;
 }
 
 .introTextContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 50%;
 }
@@ -41,7 +72,6 @@
 .postIntroContainer {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#000000, #0e0e1d);
   height: 100%;
 }
 
@@ -63,7 +93,19 @@
 .pSmall {
   color: #8389a2;
   text-align: center;
-  font-size: 18px;
-  padding-right: 10%;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.nameHeader {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.siteIntroContainer {
+  display: flex;
+  flex-direction: column;
   padding-left: 10%;
+  width: 30%;
 }

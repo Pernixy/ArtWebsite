@@ -7,12 +7,12 @@
   color: #8389a2;
   text-decoration: none;
   transition: color 0.3s;
-  padding-top: 30px;
-  font-size: 36px;
-  border-radius: 20px;
-  margin-left: 30px;
-  margin-right: 30px;
-  box-sizing: border-box; /* Include border in element size */
+  font-size: 1.5vw;
+  font-weight: 400;
+  margin-right: 1em;
+  padding-right: 30px;
+  border-right: 2px solid #8389a2;
+  display: inline-block;
 }
 
 /* Define the hover style for the NavLink */
@@ -21,4 +21,18 @@
 }
 .active {
   border-bottom: 2px solid yellow;
+}
+
+.navText {
+  color: #8389a2;
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 5%;
+  margin-inline: 10%;
 }
