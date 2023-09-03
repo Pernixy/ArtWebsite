@@ -13,6 +13,7 @@
   padding-right: 30px;
   border-right: 2px solid #8389a2;
   display: inline-block;
+  font-family: "Courier New", monospace;
 }
 
 /* Define the hover style for the NavLink */
@@ -27,12 +28,20 @@
   color: #8389a2;
   font-size: 2vw;
   font-weight: 500;
+  font-family: "Courier New", monospace;
+}
+
+.navName {
+  color: #8389a2;
+  font-size: 2vw;
+  font-weight: 500;
+  font-family: "Courier New", monospace;
 }
 
 .mainContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-inline: 5%;
+  padding-inline: 2%;
   margin-inline: 10%;
 }

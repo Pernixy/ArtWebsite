@@ -5,7 +5,7 @@ const InfoItem = (props) => {
   return (
     <div className={styles.itemContainer}>
       <img src={props.imgUrl} className={styles.img} />
-      <h3 className={styles.text}>ReactJS</h3>
+      <h3 className={styles.text}>{props.label}</h3>
     </div>
   );
 };
