@@ -13,7 +13,7 @@ import { stackImages } from "../../images/imageVariables";
 const Home = () => {
   return (
     <div className={styles.backgroundBody}>
-      <Parallax pages={7}>
+      <Parallax pages={4}>
         <ParallaxLayer offset={0.05}>
           <div>
             <NavBar />
@@ -42,8 +42,8 @@ const Home = () => {
           </div>
         </ParallaxLayer>
         <ParallaxLayer
-          offset={1.3}
-          factor={1.2}
+          offset={1.5}
+          factor={1.4}
           speed={0.5}
           style={{
             backgroundImage: `url(${starry})`,
@@ -53,7 +53,7 @@ const Home = () => {
           <div className={styles.topParallaxTransition} />
           <div className={styles.siteIntroContainer}>
             <h2 className={styles.welcome2}>Welcome to My Site</h2>
-            <p className={styles.pSmall}>
+            <p className={styles.pWelcome}>
               Welcome to my professional website! As a dedicated software
               engineer and computer science major, I've embarked on a remarkable
               journey in the world of technology. This website serves as a
@@ -69,8 +69,9 @@ const Home = () => {
 
         <ParallaxLayer
           offset={2}
-          speed={0.5}
-          style={{ background: "linear-gradient(#000000, #0e0e1d)" }}
+          speed={1}
+          factor={6}
+          style={{ background: "linear-gradient(#000000, #dcfefc 60%)" }}
         >
           <div className={styles.postIntroContainer}>
             <h1 className={styles.stackHeader}>My Technology Stack</h1>
